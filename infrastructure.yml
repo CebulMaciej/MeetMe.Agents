@@ -1,0 +1,82 @@
+version: "3.5"
+
+services:
+  consul:
+    image: consul
+    container_name: consul
+    restart: unless-stopped
+    networks:
+      - meetMe
+    ports:
+      - 8500:8500
+
+  fabio:
+    image: fabiolb/fabio
+    container_name: fabio
+    restart: unless-stopped
+    environment:
+      - FABIO_REGISTRY_CONSUL_ADDR=consul:8500
+    networks:
+      - meetMe
+    ports:
+      - 9998:9998
+      - 9999:9999
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: unless-stopped
+    networks:
+      - meetMe
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/db
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    networks:
+      - meetMe
+    ports:
+      - 5672:5672
+      - 15672:15672
+    # volumes: 
+    #   - rabbitmq:/var/lib/rabbitmq
+
+  seq:
+    image: datalust/seq
+    container_name: seq
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+    networks:
+      - meetMe
+    ports:
+      - 5341:80
+    # volumes: 
+    #   - seq:/data
+
+  vault:
+    image: vault
+    container_name: vault
+    restart: unless-stopped
+    environment:
+      - VAULT_ADDR=http://127.0.0.1:8200
+      - VAULT_DEV_ROOT_TOKEN_ID=secret
+    cap_add:
+      - IPC_LOCK
+    networks:
+      - meetMe
+    ports:
+      - 8200:8200
+
+networks:
+  meetMe:
+    name: meetMe-network
+
+volumes:
+  mongo:
+    driver: local
+  
