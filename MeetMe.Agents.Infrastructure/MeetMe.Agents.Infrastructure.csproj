@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Convey" Version="0.4.360" />
+      <PackageReference Include="Convey.CQRS.Commands" Version="0.4.360" />
+      <PackageReference Include="Convey.CQRS.Events" Version="0.4.360" />
+      <PackageReference Include="Convey.CQRS.Queries" Version="0.4.360" />
+      <PackageReference Include="Convey.Discovery.Consul" Version="0.4.360" />
+      <PackageReference Include="Convey.HTTP" Version="0.4.360" />
+      <PackageReference Include="Convey.LoadBalancing.Fabio" Version="0.4.360" />
+      <PackageReference Include="Convey.Logging" Version="0.4.360" />
+      <PackageReference Include="Convey.MessageBrokers" Version="0.4.360" />
+      <PackageReference Include="Convey.MessageBrokers.CQRS" Version="0.4.360" />
+      <PackageReference Include="Convey.MessageBrokers.RabbitMQ" Version="0.4.360" />
+      <PackageReference Include="Convey.Persistence.MongoDB" Version="0.4.360" />
+      <PackageReference Include="Convey.WebApi" Version="0.4.360" />
+      <PackageReference Include="Convey.WebApi.CQRS" Version="0.4.360" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MeetMe.Agents.Application\MeetMe.Agents.Application.csproj" />
+    </ItemGroup>
+
+</Project>

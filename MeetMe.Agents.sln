@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC480C19-33C8-45D7-AB41-5DC4D11CED6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9980104C-81BC-4DB6-A270-191F9EBF6CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetMe.Agents.Api", "MeetMe.Agents.Api\MeetMe.Agents.Api.csproj", "{C24C0BD5-49F3-458A-9288-F0142CE4970F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetMe.Agents.Application", "MeetMe.Agents.Application\MeetMe.Agents.Application.csproj", "{1ADD6B81-C7DB-453B-927A-5F7994F22A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetMe.Agents.Core", "MeetMe.Agents.Core\MeetMe.Agents.Core.csproj", "{1C816218-7D9E-4CD0-9C23-7CCF25854C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetMe.Agents.Infrastructure", "MeetMe.Agents.Infrastructure\MeetMe.Agents.Infrastructure.csproj", "{761652DE-4669-4843-A4BA-733C60178986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C24C0BD5-49F3-458A-9288-F0142CE4970F} = {FC480C19-33C8-45D7-AB41-5DC4D11CED6F}
+		{1ADD6B81-C7DB-453B-927A-5F7994F22A19} = {FC480C19-33C8-45D7-AB41-5DC4D11CED6F}
+		{1C816218-7D9E-4CD0-9C23-7CCF25854C78} = {FC480C19-33C8-45D7-AB41-5DC4D11CED6F}
+		{761652DE-4669-4843-A4BA-733C60178986} = {FC480C19-33C8-45D7-AB41-5DC4D11CED6F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C24C0BD5-49F3-458A-9288-F0142CE4970F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24C0BD5-49F3-458A-9288-F0142CE4970F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24C0BD5-49F3-458A-9288-F0142CE4970F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24C0BD5-49F3-458A-9288-F0142CE4970F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADD6B81-C7DB-453B-927A-5F7994F22A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADD6B81-C7DB-453B-927A-5F7994F22A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADD6B81-C7DB-453B-927A-5F7994F22A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADD6B81-C7DB-453B-927A-5F7994F22A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C816218-7D9E-4CD0-9C23-7CCF25854C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C816218-7D9E-4CD0-9C23-7CCF25854C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C816218-7D9E-4CD0-9C23-7CCF25854C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C816218-7D9E-4CD0-9C23-7CCF25854C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761652DE-4669-4843-A4BA-733C60178986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761652DE-4669-4843-A4BA-733C60178986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761652DE-4669-4843-A4BA-733C60178986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761652DE-4669-4843-A4BA-733C60178986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

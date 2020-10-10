@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>MeetAgents.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Convey" Version="0.4.360" />
+      <PackageReference Include="Convey.CQRS.Commands" Version="0.4.360" />
+      <PackageReference Include="Convey.CQRS.Events" Version="0.4.360" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands" />
+      <Folder Include="DTOs" />
+      <Folder Include="Queries" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MeetMe.Agents.Core\MeetMe.Agents.Core.csproj" />
+    </ItemGroup>
+
+</Project>
